@@ -1,0 +1,59 @@
+.ul{
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    border: solid black 1rem;
+    border-radius: 0.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    height: 29rem;
+    background-color: #00838f;
+    overflow-y: auto;
+    word-wrap: break-word;
+    overflow-x: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ul::-webkit-scrollbar {
+    display: none;
+}
+
+.userComment{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.2rem;
+    border: solid #64dd17 0.15rem;
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+}
+
+.comment{
+    border-radius: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+}
+
+.namedComment{
+    border-radius: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+}
+
+.commentDescription{
+    align-self: center;
+}
+
+.author{
+    margin-top: 0.2rem;
+    align-self: flex-end;
+}
+

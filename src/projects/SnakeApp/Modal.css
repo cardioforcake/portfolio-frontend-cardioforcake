@@ -1,0 +1,23 @@
+.details{
+    text-align: left;
+    margin: 3rem;
+}
+
+.modal-display{
+    border-radius: 0.5rem !important;
+}
+
+.detail-category{
+    font-weight: bold !important;
+    color: rgb(83, 83, 83);
+}
+
+.updateButton{
+    color: black;
+    font-weight: 500 !important;
+    border-radius: 0.2rem;
+}
+
+.modal-button{
+    margin-top: 1rem;
+}

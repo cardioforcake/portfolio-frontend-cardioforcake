@@ -1,0 +1,11 @@
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(21, 1.5rem);
+    grid-template-rows: repeat(21, 1.5rem);
+    width: 33.5rem;
+    height: 33.5rem;
+    flex-wrap: wrap;
+    background-color:#00838f;
+    border: solid black 1rem;
+    border-radius: 0.5rem;
+}

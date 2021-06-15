@@ -1,0 +1,15 @@
+main{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.gameArea{
+    width: 68rem;
+    display: grid !important;
+    grid-template-columns: 15rem 33rem 20rem !important;
+    margin-top: 3.5rem;
+}
+
+.commentArea{
+    margin-left: 1.5rem;
+}

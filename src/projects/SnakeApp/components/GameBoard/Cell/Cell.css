@@ -1,0 +1,133 @@
+.right-down, .up-left{
+    border-top: 1.34rem solid black;
+    border-right: 1.34rem solid black;
+    margin-top: 0.1rem;
+    margin-right: 0.1rem;
+    border-top-right-radius: 0.7rem;
+}
+
+.up-right, .left-down{
+    border-top: 1.34rem solid black;
+    border-left: 1.34rem solid black;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+    border-top-left-radius: 0.7rem;;
+}
+
+.right-up, .down-left{
+    border-bottom: 1.34rem solid black;
+    border-right: 1.34rem solid black;
+    margin-bottom: 0.1rem;
+    margin-right: 0.1rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+.left-up, .down-right{
+    border-bottom: 1.34rem solid black;
+    border-left: 1.34rem solid black;
+    margin-bottom: 0.1rem;
+    margin-left: 0.1rem;
+    border-bottom-left-radius: 0.7rem;
+}
+
+.up, .down, .up-tail, .down-tail, .up-head, .down-head{
+    background-color: black;
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
+    color: white;
+}
+
+.left, .right, .left-tail, .right-tail, .left-head, .right-head{
+    background-color: black;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    color: white;
+}
+
+.up-tail{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.down-tail{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.left-tail{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.right-tail{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+
+
+
+.up-head{
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* border-top-color: red;
+    border-top-width: ; */
+}
+
+.up-head > .eyes{
+    transform: rotate(180deg);
+}
+
+.down-head{
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* .down-head > .eyes{
+    transform: rotate(180deg);
+} */
+
+.left-head{
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.left-head > .eyes{
+    transform: rotate(90deg);
+}
+
+.right-head{
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-head > .eyes{
+    transform: rotate(270deg);
+}
+
+.empty{
+    background-color:#00838f;
+}
+
+.apple{
+    background-color: #64dd17;
+    border-radius: 50%;
+}
+
+.eyes{
+    font-size: 1.4rem;
+}

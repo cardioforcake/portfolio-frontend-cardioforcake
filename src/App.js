@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import {useState} from 'react'
+import {auth} from './services/firebase'
 import './App.css';
+import SnakeApp from './projects/SnakeApp/SnakeApp'
+import Header from './components/Header/Header'
 
 function App() {
+
+  const [userState, setUserState] = useState({
+    user: null,
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="body">
+        <Header user={userState.user}/>
+        <SnakeApp auth={auth} user={userState.user} setUserState={setUserState}/>
+        </div>
     </div>
   );
 }
