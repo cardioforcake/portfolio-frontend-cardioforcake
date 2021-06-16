@@ -11,7 +11,7 @@ function Header(props){
                             props.user ?
                             <>
                                 <li className={`${styles.li} ${styles.welcome}`}>Welcome,&nbsp;&nbsp;{props.user.displayName} !</li>
-                                <li className={`${styles.li} btn light-green accent-4 waves-effect waves-light`} onClick={logout}>LogOut</li>
+                                <li className={`${styles.li} btn light-green accent-4 waves-effect waves-light ${styles.button}`} onClick={logout}>LogOut</li>
                             </>
                             :
                             <>
