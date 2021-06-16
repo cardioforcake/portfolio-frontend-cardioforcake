@@ -4,7 +4,7 @@ function ScoreBoard(props){
 
     function displayInstrucitions(inst){
         if(inst===0){
-            return <h6>Press ⬅️, ⬆️, or ➡️, to start the game!</h6>
+            return <h6>Press ⬅️, ⬆️, or ➡️ to start the game!</h6>
         }else if(inst===1){
             return <h6>Eat the green apples!</h6>
         }else if(inst===2){
