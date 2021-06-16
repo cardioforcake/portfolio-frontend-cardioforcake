@@ -42,7 +42,7 @@ function SnakeApp(props) {
 
   const [ticking, setTicking] = useState(false)
 
-  let time = useRef()
+  const time = useRef()
 
   const [instructions, setInstructions] = useState(0)
 

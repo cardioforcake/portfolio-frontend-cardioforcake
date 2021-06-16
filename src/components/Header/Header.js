@@ -1,11 +1,18 @@
 import {login, logout} from '../../services/firebase';
 import styles from './Header.module.css'
+import {Link} from 'react-router-dom';
 
 function Header(props){
     return(
         <header>
             <nav className={`${styles.nav}  cyan darken-3`}>
-                <div className={styles.wrapper}>
+                <div className={props.home ? styles.home : styles.away}>
+                    {      
+                        props.home ? '' :
+                            <Link to="/" className={`main-buttons ${styles.homeButton}`}>
+                                <button className={`btn light-green accent-4 waves-effect waves-light ${styles.button}`}>Home</button>
+                            </Link>
+                    }
                     <ul className={styles.ul}>
                         {
                             props.user ?

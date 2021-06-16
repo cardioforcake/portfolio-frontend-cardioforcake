@@ -1,6 +1,11 @@
-.wrapper{
+.home{
     display: flex;
     justify-content: flex-end;
+}
+
+.away{
+    display: flex;
+    justify-content: space-between;
 }
 
 .ul{
@@ -45,4 +50,9 @@
     color: black;
     font-weight: 500;
     width: 6.5rem;
+    border-radius: 0.2rem;
+}
+
+.homeButton{
+    margin-left: 1rem;
 }

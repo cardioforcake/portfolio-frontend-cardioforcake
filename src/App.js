@@ -1,9 +1,11 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useState, useRef} from 'react';
 import {auth} from './services/firebase';
 import './App.css';
 import SnakeApp from './projects/SnakeApp/SnakeApp';
 import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 import {createUser, fetchUser} from './services/user-services'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
 
@@ -17,6 +19,10 @@ function App() {
     snakeScore: 0,
     _id: null
   })
+
+  const home = useRef(true);
+  
+  const away = useRef(false)
 
   useEffect(function(){
 
@@ -60,14 +66,27 @@ function App() {
   return (
     <div className="App">
       <div className="body">
-        <Header user={userState.user}/>
-        <SnakeApp 
-          auth={auth} 
-          user={userState.user} 
-          setUserState={setUserState} 
-          userData={userData} 
-          setUserData={setUserData}
-        />
+
+        <BrowserRouter>
+          <Switch>
+            <Route path="/snake">
+              <Header user={userState.user} home={away.current}/>
+              <SnakeApp 
+                auth={auth} 
+                user={userState.user} 
+                setUserState={setUserState} 
+                userData={userData} 
+                setUserData={setUserData}
+              />
+            </Route>
+            <Route path="/">
+              <Header user={userState.user} home={home.current}/>
+              <Home />
+            </Route>
+          </Switch>
+        </BrowserRouter>
+
+
         </div>
     </div>
   );

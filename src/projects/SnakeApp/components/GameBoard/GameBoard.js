@@ -76,11 +76,6 @@ function GameBoard(props){
                     else{
                         return <Cell status="empty" name={cell} key={idx}/>
                     }
-                    // if (props.snake.includes(cell)){
-                    //     return <Cell status="fill" name={cell}key={idx}/>
-                    // }else{
-                    //     return <Cell status="empty" name={cell} key={idx}/>
-                    // }
                 })}
             </div>
     );

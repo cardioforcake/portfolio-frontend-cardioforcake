@@ -1,0 +1,35 @@
+.card{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: solid 0.8rem #64DD17;
+    margin-top: 2rem;
+}
+
+.body{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.name{
+    color: #a6ccce;
+}
+
+.intro{
+    color: #a6ccce;
+    /* color: #add194; */
+    width: 50%;
+    font-size: 2rem;
+}
