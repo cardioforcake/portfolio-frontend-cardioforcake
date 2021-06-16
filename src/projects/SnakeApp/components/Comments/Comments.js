@@ -26,7 +26,7 @@ function Comments(props){
                     }else{
                         if(com.userName === 'anonymous'){
                             return ''
-                        }else if(com.useName){
+                        }else if(com.userName){
                             return <li key={idx} className={styles.namedComment}>
                                 <div className={styles.commentDescription}>{com.comment}</div>
                                 <div className={styles.author}>-&nbsp;&nbsp;{com.userName}</div>

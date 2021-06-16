@@ -11,8 +11,9 @@
     height: 100%;
     background-color: rgba(255, 255, 255, 0.6);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .score{
@@ -22,4 +23,28 @@
 
 .scoreTitle{
     font-weight: 500;
+}
+
+.userHighScore{
+    font-size: 1.5rem;
+}
+
+.userHighScoreTitle{
+    font-size: 1rem;
+}
+
+.scores{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.instructions{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
 }

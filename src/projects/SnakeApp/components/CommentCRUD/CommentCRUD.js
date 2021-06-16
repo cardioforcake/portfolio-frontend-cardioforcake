@@ -7,7 +7,7 @@ function CommentCRUD(props){
 
     async function handleSubmit(event){
         event.preventDefault();
-        if(props.userComment.comment===null){
+        if(props.userComment.comment===null && !!event.target.comment.value){
             const comments = await addComment({
                 comment: event.target.comment.value,
                 userId: props.user ? props.user.uid : '',
@@ -25,7 +25,7 @@ function CommentCRUD(props){
                 event.target.comment.value = null;
             }
         }
-        else{
+        else if(!!event.target.comment.value){
             const comments = await updateComment({
                 comment: event.target.comment.value,
                 userId: props.user.uid,
