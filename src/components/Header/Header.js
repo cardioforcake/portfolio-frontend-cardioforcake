@@ -16,10 +16,18 @@ function Header(props){
                             :
                             <>
                                 <li className={`${styles.li} ${styles.welcome}`}>Login to access additional features!</li>
-                                <li className={`${styles.li} btn light-green accent-4 waves-effect waves-light`} onClick={login}>Login</li>
+                                <li className={`${styles.li} ${styles.tooltip}`} >
+                                    <button className={`btn light-green accent-4 waves-effect waves-light ${styles.button}`} onClick={login}>
+                                        Login
+                                    </button>
+                                    <div className={styles.tooltiptext}>
+                                        Enables personalized comments and persists records across different sessons
+                                    </div>
+                                </li>
                             </>
                         }
                     </ul>
+                    
                 </div>
             </nav>
         </header>
