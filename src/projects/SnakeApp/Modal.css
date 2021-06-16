@@ -5,6 +5,8 @@
 
 .modal-display{
     border-radius: 0.5rem !important;
+    width: 30rem;
+    background-color: #00838F;
 }
 
 .detail-category{
@@ -20,4 +22,8 @@
 
 .modal-button{
     margin-top: 1rem;
+}
+
+.modal-display{
+    width: 30rem;
 }

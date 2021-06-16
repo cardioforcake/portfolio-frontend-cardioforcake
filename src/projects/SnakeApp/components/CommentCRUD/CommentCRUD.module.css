@@ -1,0 +1,34 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textarea{
+    width: 25rem;
+    height: 7rem;
+    background-color: #CCE6E8;
+}
+
+.buttons{
+    margin-top: 1rem;
+    width: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn{
+    width: 6rem;
+    height: 2.5rem;
+    color: black;
+    font-weight: 500 !important;
+    border-radius: 0.2rem;
+}

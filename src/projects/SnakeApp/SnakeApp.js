@@ -118,16 +118,6 @@ function SnakeApp(props) {
                 }
               }else if(gameOver){
                 console.log('press ENTER to reset the game')
-                // setSnake([
-                //   {loc: '2022', dir: 'up'},
-                //   {loc: '2021', dir: 'up'}, 
-                //   {loc: '2020', dir: 'up'}, 
-                //   {loc: '2019', dir: 'up-tail'},
-                // ])
-                // setApple('2026')
-                // setDirection('up')
-                // setGameOver(false)
-                // setScore(0)
               }else{
                 setTicking(true)
                 setDirection('left')
@@ -142,16 +132,6 @@ function SnakeApp(props) {
                 }
               }else if(gameOver){
                 console.log('press ENTER to reset the game')
-                // setSnake([
-                //   {loc: '2022', dir: 'up'},
-                //   {loc: '2021', dir: 'up'}, 
-                //   {loc: '2020', dir: 'up'}, 
-                //   {loc: '2019', dir: 'up-tail'},
-                // ])
-                // setApple('2026')
-                // setDirection('up')
-                // setGameOver(false)
-                // setScore(0)
               }else{
                 setTicking(true)
                 setInstructions(1)
@@ -165,16 +145,6 @@ function SnakeApp(props) {
                 }
               }else if(gameOver){
                 console.log('press ENTER to reset the game')
-                // setSnake([
-                //   {loc: '2022', dir: 'up'},
-                //   {loc: '2021', dir: 'up'}, 
-                //   {loc: '2020', dir: 'up'}, 
-                //   {loc: '2019', dir: 'up-tail'},
-                // ])
-                // setApple('2026')
-                // setDirection('up')
-                // setGameOver(false)
-                // setScore(0)
               }else{
                 setTicking(true)
                 setDirection('right')
@@ -188,16 +158,6 @@ function SnakeApp(props) {
                 }
               }else if(gameOver){
                 console.log('press ENTER to reset the game')
-                // setSnake([
-                //   {loc: '2022', dir: 'up'},
-                //   {loc: '2021', dir: 'up'}, 
-                //   {loc: '2020', dir: 'up'}, 
-                //   {loc: '2019', dir: 'up-tail'},
-                // ])
-                // setApple('2026')
-                // setDirection('up')
-                // setGameOver(false)
-                // setScore(0)
               }
               break;
             default:

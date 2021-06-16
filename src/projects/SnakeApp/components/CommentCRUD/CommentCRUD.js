@@ -1,5 +1,6 @@
 
 import {addComment, updateComment, deleteComment} from '../../services/service-functions'
+import styles from './CommentCRUD.module.css'
 
 
 
@@ -55,18 +56,20 @@ function CommentCRUD(props){
     }
     
     return(
-        <>
-        <form onSubmit={handleSubmit}>
-            {
-                props.user ? 
-                    <textarea name="comment" key={props.userComment.comment ? 'exists':'empty'} defaultValue={props.userComment.comment}></textarea>
-                :
-                    <textarea name="comment"></textarea>
-            }
-            <button type="submit" className="modal-close">{props.userComment.comment ? "Edit" : "Add"}</button>
-        </form>
-        {props.userComment.comment ? <button onClick={handleDelete} className="modal-close">Delete Comment</button>: ''}
-        </>
+        <div className={styles.container}>
+            <form onSubmit={handleSubmit} className={styles.form}>
+                {
+                    props.user ? 
+                        <textarea name="comment" className={styles.textarea} key={props.userComment.comment ? 'exists':'empty'} defaultValue={props.userComment.comment}></textarea>
+                    :
+                        <textarea name="comment" className={styles.textarea}></textarea>
+                }
+                <div className={styles.buttons}>
+                {props.userComment.comment ? <button onClick={handleDelete} className={`modal-close ${styles.btn} green waves-effect waves-light btn`}>Delete</button>: ''}
+                    <button type="submit" className={`modal-close ${styles.btn} light-green accent-4 waves-effect waves-light btn`}>{props.userComment.comment ? "Edit" : "Add"}</button>
+                </div>
+            </form>
+        </div>
     )
 
 }
