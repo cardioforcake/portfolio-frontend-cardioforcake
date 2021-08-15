@@ -33,3 +33,12 @@
     width: 50%;
     font-size: 2rem;
 }
+
+.dl{
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    background-color: #64DD17;
+    color: black;
+    width: 15rem;
+    font-weight: 500;
+}

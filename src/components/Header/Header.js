@@ -6,7 +6,9 @@ function Header(props){
     return(
         <header>
             <nav className={`${styles.nav}  cyan darken-3`}>
+                
                 <div className={props.home ? styles.home : styles.away}>
+                    
                     {      
                         props.home ? '' :
                             <Link to="/" className={`main-buttons ${styles.homeButton}`}>

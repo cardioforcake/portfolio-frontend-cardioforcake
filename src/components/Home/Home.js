@@ -11,6 +11,7 @@ function Home(props){
                     <img src="https://i.imgur.com/ip733jM.png" className={styles.img} />
                 </Link>
             </div>
+            <Link to="/Stan-Chao-Resume.pdf" target="_blank" download className={`btn ${styles.dl}`}>Download Resume</Link>
         </div>
     )
 }
