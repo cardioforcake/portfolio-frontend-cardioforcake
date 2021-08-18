@@ -1,6 +1,6 @@
 .card{
-    width: 20rem;
-    height: 20rem;
+    width: 16rem;
+    height: 16rem;
     border-radius: 1rem;
     color: black;
     font-weight: 700;
@@ -25,13 +25,15 @@
 
 .name{
     color: #a6ccce;
+    font-size: 1.5rem;
+    margin: 1rem auto 0.5rem auto;
 }
 
 .intro{
     color: #a6ccce;
-    /* color: #add194; */
     width: 50%;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    margin: 0.5rem auto 0 auto;
 }
 
 .dl{
@@ -41,4 +43,16 @@
     color: black;
     width: 15rem;
     font-weight: 500;
+}
+
+.linkImg{
+  width: 3rem;
+  height: 3rem;
+}
+
+.links{
+  margin-top: 1rem;
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
 }
